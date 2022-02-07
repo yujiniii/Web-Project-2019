@@ -1,0 +1,343 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>CRUSH FANPAGE</title>
+		<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+		<link href="https://fonts.googleapis.com/css?family=Black+And+White+Picture|Cinzel|Do+Hyeon|Jua|Nanum+Gothic|Permanent+Marker&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Architects+Daughter|Yeon+Sung&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=East+Sea+Dokdo&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Black+And+White+Picture&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Indie+Flower&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Indie+Flower&display=swap" rel="stylesheet">
+
+		<style>
+
+			/*기본*/
+			h1 {text-align: center;
+				color:white;
+				text-shadow: 2px 4px 2px gray;
+				font-family: 'Permanent Marker', cursive; font-size:50px;
+				margin-left: 0%; margin-top: 20%;
+				margin-bottom: 20%;}
+
+
+h1>span{	  animation-duration: 0.5s;
+						animation-name: finger;
+					 animation-iteration-count: infinite;}
+
+			h2 {margin-left: 10px; font-family: 'Architects Daughter', cursive; font-size: 44px; color: #595478; text-decoration: underline;}
+
+			body {background-image: url(img/index_main.gif);
+				background-repeat: no-repeat;
+				background-size: 100% 100%;
+				background-attachment: fixed;
+				}
+
+			div { background-color: white; padding-left: 20px; padding-right: 20px; padding-top: 15px;
+				padding-bottom: 15px; font-family: 'Yeon Sung', cursive; font-size: 22px; margin-bottom: 30%}
+
+			section {background-color: rgba( 255, 255, 255, 0.3 )}
+
+			a {text-decoration: none; color: white;}
+
+			body>a {position: fixed; bottom: 40%; right: 40px}
+
+
+			/*메뉴바*/
+
+			.mainmaue {padding-left:63%; padding-top:10px;position:fixed; top: 0; left: 0; width: 100%; height: 40px;
+				 list-style-type: none; margin-left: 0px; margin-top: 0px; color: white; text-shadow: 2px 2px 1px black;
+				font-family: 'Cinzel', serif;}
+			.mainmaue:link {color:white;}
+			.mainmaue:visited {color:white;}
+
+
+
+			.mainmaue li {
+					  display:inline; margin-left: 50px; padding-right: 1px }
+			.mainmaue li a:hover { color:#C6579A}
+
+			.mainmaue li ul{display:none; list-style-type:none;  padding:0px;
+						margin:0px; border:0px}
+
+			.mainmaue li:hover ul {display:block;}
+
+			.mainmaue>li>ul>li {display: block; position: relative; left:510px; padding-right:1px; margin-right: 0px; }
+
+
+
+			/*introdution*/
+
+			#pic {float: left; margin-right: 40px; margin-left: 20px;}
+
+			#profile {display:inline-block; border-left-style: dotted; padding-left: 10px; }
+
+			#donforget {font-family: 'East Sea Dokdo', cursive; font-size: 30px; color: #253746; margin-left: 5%; border-left-style:solid; border-left-width:3px; border-left-color: #F5B6CD; padding-left: 13px;  }
+
+			#thankyou {margin-left: 10%; display: inline-block;}
+
+			#fa {margin-left: 25px}
+
+			/*album*/
+
+
+			#two > p {padding-bottom: 13%; padding-top: 20%}
+			#two>span {display: inline; font-family: 'Black And White Picture', sans-serif; font-size:33px; }
+
+
+			pre {float: left; margin-right: 70px}
+
+
+			/*crushbomb/login*/
+
+
+			iframe{float: left; margin-right:200px; border-style: outset; border-color:#201547;  }
+
+			div form {padding:10px 100px 10px 10px; background-color: white; display: inline-block; border-style:solid;border-color:#041C2C;border-width:3px;border-radius: 3px; font-size: 25px; margin-top: 5%; }
+
+			form>p{display: inline;font-family: 'Jua', sans-serif; font-size:30px; text-align:center;}
+
+			input{background-color:#CED9E5; font-size: 20px; }
+			input:focus {border-style: solid; border-width:1px; border-color:#F8E59A; background-color: #F8E59A}
+
+			#three{padding-bottom: 15%; margin-bottom: 20%}
+
+			#three > p {margin-left: 20px; margin-bottom: 0%}
+
+			/*doyouloveme*/
+
+			#fo>a>img {position: absolute; margin-right: 100px; left:200px; float: left}
+			#fo>p {position: absolute; right: 30%; font-family: 'Indie Flower', cursive;font-size: 30px;}
+ 			#fo{padding-bottom: 40%; display:none; margin-top: 0;}
+
+ 			section>a>img {
+							  animation-duration: 8s;
+
+							  animation-name: slidein;
+
+							  animation-iteration-count: infinite;
+							}
+
+
+@keyframes slidein {
+		  0% {
+		    margin-left: 100%;}
+
+		  75% {
+		    margin-left: 0%; }
+		  85%{
+		   	opacity: 0.5}
+		  90%{
+		   		opacity: 0.25}
+		  100%{
+		   		opacity: 0}
+   }
+
+	 @keyframes finger {
+		0% {
+			transform: translateY(0px);
+		}
+
+		50% {
+			transform: translateY(15px);
+		}
+
+		100% {
+			transform: translateY(0);
+		}
+}
+
+
+
+
+
+
+
+			/*마지막*/
+			footer { margin-top: 10%;
+				font-family: 'Indie Flower', cursive; color: white; font-size: 30px; text-align: right; padding-right: 2%; margin-top: 8%; margin-bottom: 10px;}
+
+
+		</style>
+		<script type="text/javascript">
+
+			
+
+			function SPECIAL() {
+				var DIV = document.getElementById("fo");
+				DIV.style.display='block';
+			}
+
+			
+			
+			$(window).on('load',function() {
+
+				var a = window.confirm("업데이트된 정규 2집을 확인 해보세요!");
+				if(a==true){
+				    var position = $('#two').offset(); // 위치값
+				    $('html, body').animate({ scrollTop : position.top }, 1000); }
+
+			 });
+		
+
+
+		</script>
+	</head>
+
+	<body id="h1">
+
+
+
+		<header>
+
+
+		<ul class="mainmaue">
+			<li><a href="#one">INTRODUTION</a></li>
+			<li><a href="#two">ALBUM</a></li>
+			<li><a href="#three">CRUSHBOMB / LOGIN</a></li>
+			<li><a href="gallery.html" target="_blank">GALLERY</a>
+											<ul>
+												<li><a href="gallery.html#img" target="_blank">IMAGE</a></li>
+												<li><a href="gallery.html#video" target="_blank">VIDEO</a></li>
+
+											</ul>
+			</li>
+		</ul><br>
+
+
+
+
+
+
+
+
+		<h1>CRUSH   ON  YOU<br><br><span>↓</span></h1>
+
+		</header>
+
+	<section>
+		<div id="one">
+				<h2>INTRODUTION</h2>
+				<p id="pic">
+					<img src="img/pro.png" alt="크러쉬 프로필" width="165" height="220"><br>
+
+						<a href="https://www.facebook.com/crush9244"><img  id="fa" src="img/face.png" alt="페이스북" width="35" height="35"></a>
+						<a href="https://www.instagram.com/crush9244/"><img src="img/insta.png" alt="인스타그램" width="35" height="35"></a>
+						<a href="https://twitter.com/crush9244"><img src="img/tw.png" alt="트위터" width="35" height="35"></a>
+				</p><br>
+
+
+				<p id="profile">
+				CRUSH | 크러쉬 (신효섭)<br><br>
+				출생 : 1992년 5월 3일<br>
+				소속 : (주)피네이션<a href="https://www.instagram.com/pnation.official/" style="color: #C6579A;"> [바로가기]</a><br>
+
+				[수상경력]<br>
+				2017 | 	제 31회 골든디스크 어워즈 베스트 R&B소울살<br>
+				2016 |  Mnet 아시안 뮤직 어워드 베스트 보컬 퍼포먼스 남자 솔로<br>
+				2015 |  Mnet 아시안 뮤직 어워드 베스트 콜라보레이션상<br>
+				2015 | 	대중음악상 최우수 알앤비&소울 음반상<br>
+				</p>
+				<br><br><br><br>
+			감각적인 보이스와 폭넓은 음악적 스펙트럼을 갖고 있는 크러쉬는 2013년 데뷔이후 ‘크러쉬=흥행불패’ 라는 공식을 성립한 아티스트입니다.
+			올드스쿨 펑크에서부터 네오소울, 슬로우 잼, 사우스 힙합, Future R&B에 이르기까지 성숙한 사운드를 선보이는 싱어송라이터 크러쉬의 진화는 현재 진행형입니다.<br>
+			<hr><br>
+			<p id="donforget">
+				그리고 아까 드리지 못한 말이 하나 있는데<br>
+				과연 제가 언제까지 여러분들께 사랑을 받으면서 음악을 할 수 있을까?<br>
+				여러분들께 언제까지 좋은 음악을 들려드릴 수 있을까? 에 대한<br>
+				그런 생각을 요즘 좀 자주 하는 거 같아요<br>
+				그래서 고민 끝에 내린 결론은<br>
+				그냥 닥치고 열심히 하자<br>
+				예,,,다를게 없습니다<br>
+				여러분들께 제가 만드는 음악, 제가 부르는 노래들이<br>
+				잘 전달만 될 수 있다면 저는 그걸로 됐습니다<br>
+				그래서 아까 얘기한 것처럼 계속해서 제가 사랑을 받는 만큼<br>
+				저도 여러분들한테 음악으로 보답을 해야 되는게 맞다고 생각이 되고요<br><br>
+				<span style="font-size: 40px; color: #A50034">그래서 <br>
+				늘 하는 얘기지만<br>
+				절대 여러분들 그리고 지금의 저<br>
+				우리 모두 이 순간을 잊어버리지 말자<br>
+				<br>
+
+				감사합니다</span>	</p>
+
+
+				<p id="thankyou">-181104 크러쉬 단독콘서트[WONDERLOST]-</p>
+
+
+
+
+		</div>
+
+
+
+
+
+
+
+		<div id=two>
+		<h2>ALBUM</h2>
+		<pre><a href="https://www.youtube.com/watch?v=UmCQkhpTzhE"><img src="img/album/cru.PNG" alt="크러쉬정규 crush on you" width="160" height="160"></a>          <a href="https://youtu.be/Ianq_1GDzbE"><img src="img/album/sofa.jpg" alt="크러쉬싱글 sofa" width="160" height="160"></a>          <a href="https://youtu.be/_1SX7W1IfJw"><img src="img/album/oa.jpg" alt="크러쉬싱글 오아시스" width="160" height="160"></a>          <a href="https://youtu.be/TcytstV1_XE"><img src="img/album/don.jpg" alt="크러쉬싱글 잊어버리지마" width="160" height="160"></a>          <a href="https://youtu.be/CO3wfnmKaEA"><img src="img/album/int.PNG" alt="크러쉬EP interlude" width="160" height="160"></a><br><br><a href="https://youtu.be/c63l35zLrXM"><img src="img/album/lust.PNG" alt="크러쉬EP wonderlust" width="160" height="160"></a>          <a href="https://youtu.be/W0cs6ciCt_k"><img src="img/album/bea.png" alt="도꺠비OST beautiful" width="160" height="160"></a>          <a href="https://youtu.be/SIZ8fDC_XP0"><img src="img/album/out.jpg" alt="크러쉬싱글 outside" width="160" height="160"></a>          <a href="https://youtu.be/jNqqBiIQsRQ"><img src="img/album/nep.jpg" alt="크러쉬싱글 내편이돼줘" width="160" height="160"></a>          <a href="https://youtu.be/13xy-si_o6c"><img src="img/album/iz.jpg" alt="크러쉬싱글 잊을만하면" width="160" height="160"></a><br><br><a href="https://youtu.be/B-rfUSpduXY"><img src="img/album/lost.jpg" alt="크러쉬EP wonderlost" width="160" height="160"></a>          <a href="https://youtu.be/33hn0AQPT4k"><img src="img/album/none.jpg" alt="크러쉬싱글 none" width="160" height="160"></a>          <a href="https://youtu.be/LGRYnB3jF3I"><img src="img/album/lay.jpg" alt="크러쉬싱글 lay your head on me" width="160" height="160"></a>          <a href="https://www.youtube.com/watch?v=O2i0gxuwx_g"><img src="img/album/iwa.jpg" alt="크러쉬싱글 I Wanna Be Yours" width="160" height="160"></a>          <a href="https://www.youtube.com/watch?v=OoMIAo0a2TA"><img src="img/album/nappa.jpg" alt="크러쉬싱글 NAPPA" width="160" height="160"></a><br><br><a href="https://youtu.be/5N1KcPfyj74"><img src="img/album/from.PNG" alt="크러쉬정규2집" width="160" height="160"></a></pre>
+
+		<img src="img/big1.PNG" alt="큰따옴표이미지"><span>크러쉬의 주옥같은 앨범들,,, </span><img src="img/big2.PNG" alt="큰따옴표이미지">
+
+		<p>앨범 이미지를 누르시면 <a href="https://www.youtube.com/premium" target="_blank"><img src="img/youtube.jpg" alt="유튜브 메인" width="90px" height="20px"></a> 로 연결됩니다.<br>
+		크러쉬의 감미로운 목소리를 감상하세요!!</p>
+
+
+		</div>
+
+
+
+
+
+
+
+
+
+
+		<div id="three">
+			<h2>CRUSHBOMB / LOGIN</h2><br>
+
+				<p style="font-family: 'Do Hyeon', sans-serif; font-size:40px;">[크러쉬 공식 팬카페 CRUSHBOMB]<br></p>
+				<iframe src="http://cafe.daum.net/crushofficial" width="900" height="500" scrolling="auto" align="left"></iframe>
+				<br>
+
+				<form method="post">
+					<p >[LOGIN]</p><br><br>
+					ID : <input type="email" name="ID" placeholder="your@exam.ple"> <br>
+					PW : <input type="password" name="PW" placeholder="비밀번호"><br>
+					<input type="checkbox" name="">로그인 상태 유지<br>
+					<input type="submit" value="확인"> <input type="reset" value="취소"><br>
+					<a style="color: #7E2D40;" href="sign_up.html"target="_blank">회원가입</a>
+				</form>
+
+		</div>
+
+		<a href="#fo" onclick="SPECIAL()">
+			<img src="img/eventpage.PNG" alt="두유 산책" width="400" height="400"></a>
+
+		<div id="fo">
+			<h2> SPECIAL PAGE </h2>
+			<a href="doyou.html" target="_blank"><img src="img/doyouloveme.png" alt="두유타이틀" width="540" height="540"></a>
+			<p><img src="img/big1.PNG" alt="큰따옴표이미지">DO YOU LOVE ME ? <img src="img/big2.PNG" alt="큰따옴표이미지"></p>
+
+		</div>
+
+
+
+
+	</section>
+
+
+	<a href="#h1"><img src="img/go_top.png" alt="맨위로가기"></a>
+
+	<footer >
+		thanks to. siyeon | inhee
+	</footer >
+
+	</body>
+
+</html>

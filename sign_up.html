@@ -1,0 +1,189 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>SIGN UP PAGE</title>
+		<link href="https://fonts.googleapis.com/css?family=Black+And+White+Picture|Cinzel|Do+Hyeon|Jua|Nanum+Gothic|Permanent+Marker&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Architects+Daughter|Yeon+Sung&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=East+Sea+Dokdo&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Song+Myung&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Indie+Flower&display=swap" rel="stylesheet">
+		<style>
+			
+			/*기본*/
+
+			
+			body{background-color: #D1DDE6; margin-bottom:0px; background-repeat: no-repeat;}
+
+			#main_title { margin-top:5%; margin-left:0px; float: left;  display: inline-block;}
+			
+
+			a {text-decoration: none; margin-bottom: 0px; color:#002554;}
+
+
+			/*메인메뉴*/
+
+			.mainmaue {padding-left:63%; padding-top:10px;position:fixed; top: 0; left: 0; width: 100%; height: 40px;
+				 list-style-type: none; margin-left: 0px; margin-top: 0px; color: white; text-shadow: 2px 2px 1px #white;
+				font-family: 'Cinzel', serif;}
+			.mainmaue:link {color:white;}
+			.mainmaue:visited {color:white;}
+
+
+
+			.mainmaue li {
+					  display:inline; margin-left: 50px; padding-right: 1px }
+			.mainmaue li a:hover { color:#C6579A}
+
+			.mainmaue li ul{display:none; list-style-type:none;  padding:0px;
+						margin:0px; border:0px}
+
+			.mainmaue li:hover ul {display:block;}
+
+			.mainmaue>li>ul>li {display: block; position: relative; left:510px; padding-right:1px; margin-right: 0px; }
+
+
+
+			.red {color: red; font-size:19px;}
+	
+
+
+			/*회원가입폼*/
+
+			div{background-color: white; padding-left: 20px;padding-top: 50px; padding-bottom: 15px;margin-left:40%; margin-right: 5%; margin-top: 8%;
+				font-family: 'Yeon Sung', cursive; font-size: 23px;}
+
+			form { margin-left: 15px; margin-top:35px; color: #004F71; padding-bottom: 10%}
+
+			input {height: 30px; background-color:#B6CFD0; font-size: 20px;}
+			input:focus {border-style: solid; border-width:1px; border-color:#F8E59A; background-color: #F8E59A}
+
+			select {height: 30px}
+
+			h6 {display: inline; color:#00263A; font-family: 'Song Myung', serif; font-size: 35px;}
+
+			h1 {display: inline; color:#00263A; font-family: 'Song Myung', serif; font-size: 42px;}
+
+			
+			/*마지막*/
+			footer {text-shadow: 2px 2px 2px gray; font-family: 'Indie Flower', cursive; color: white; font-size: 30px; text-align: right; padding-right: 2%; margin-top: 8%; margin-bottom: 10px;}
+
+		</style>
+	</head>
+
+
+	<body>
+
+		<header>
+
+		<ul class="mainmaue">
+			<li><a href="index.html#one">INTRODUTION</a></li>
+			<li><a href="index.html#two">ALBUM</a></li>
+			<li><a href="index.html#three">CRUSHBOMB / LOGIN</a></li>
+			<li><a href="gallery.html" >GALLERY</a>
+										<ul>
+												<li><a href="gallery.html#img" >IMAGE</a></li>
+												<li><a href="gallery.html#video" >VIDEO</a></li>
+												x		
+										</ul>
+			</li>
+
+		</ul><br>
+
+	</header>
+
+
+
+
+
+
+
+		<img id="main_title" src="img/sign_up_img.png" alt="회원가입크러쉬" height="1600" width="900" >	
+
+			
+
+<section>
+
+
+
+
+		
+
+			<div id="text">
+				<br>
+				<h1>회원가입</h1>
+				<br>
+				<form method="post">	 
+				<h6>아이디</h6><br>실제 사용하시는 이메일 주소를 입력하세요. <br>
+				<input type="email" name="ID"placeholder="your ID"> <span style="color: black">@</span> 
+
+				<select style="width: 180px;height: 38px;" name="adress">
+					<option value="naver">naver.com(네이버)</option>
+					<option value="nate">nate.com(네이트)</option>
+					<option value="duam">duam.net(다음)</option>
+					<option value="google">gmail.com(구글)</option>
+					<option value="dongyang">tong.dongyang.ac.kr(동양미래대)</option>
+					<option value="none">직접 입력</option>
+				</select>
+
+				<input type="text" name="기타 이메일" placeholder="exam.ple"><br>
+				<span class="red">필수 정보입니다.</span><br><br>
+				<h6>비밀번호</h6><br>
+				8~16자 영문 대 소문자, 숫자, 특수문자를 사용하세요.<br>
+				<input type="password" name="PW"><br>
+				<span class="red">필수 정보입니다.</span><br><br>
+				<h6>비밀번호 재확인</h6><br>
+				<input type="password" name="PW"><br>
+				<span class="red">필수 정보입니다.</span><br><br>
+				<h6>이름</h6><br>
+				<input type="text" name="name"><br>
+				<span class="red">필수 정보입니다.</span><br><br>
+				<h6>생년월일</h6><br>
+				<input type="text" name="year" placeholder="년(4자)">
+				 <select name="month"style="height: 38px; width: 80px;">
+					<option value="none">월 선택</option>
+					<option value="1">1월</option>
+					<option value="2">2월</option>
+					<option value="3">3월</option>
+					<option value="4">4월</option>
+					<option value="5">5월</option>
+					<option value="6">6월</option>
+					<option value="7">7월</option>
+					<option value="8">8월</option>
+					<option value="9">9월</option>
+					<option value="10">10월</option>
+					<option value="11">12월</option>
+					<option value="12">12월</option>
+				</select>
+				 <input type="text" name="day" placeholder="일" style="width: 80px;"><br>
+				<span class="red">태어난 년도 4자리를 정확하게 입력하세요.</span><br><br>
+				<h6>성별</h6><br>
+				<input type="radio" name="gender"value="남자">남자 <input type="radio" name="gender"value="여자">여자<br>
+				<span class="red">필수 정보입니다.</span><br><br>
+
+				<h6>본인확인이메일</h6><br>
+				<input type="email" name="subemail" placeholder="선택입력" style="width: 300px;"><br><br><br>
+
+				<input style="background-color: #174A5B; color: white; font-size: 30px; width: 180px; height: 60px; margin-left:50%; font-family: 'Song Myung', serif; " type="submit" value="가입하기" >
+
+				</form>
+
+			</div>
+
+
+
+
+		
+
+	</section>
+
+
+
+
+	<footer>
+		thanks to. siyeon | inhee
+	</footer>
+
+
+	</body>		
+</html>
